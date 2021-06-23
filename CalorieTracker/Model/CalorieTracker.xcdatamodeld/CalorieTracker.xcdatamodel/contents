@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Entry" representedClassName="Entry" syncable="YES">
+        <attribute name="qty" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="food" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Food" inverseName="entry" inverseEntity="Food"/>
+    </entity>
+    <entity name="Food" representedClassName="Food" syncable="YES">
+        <attribute name="calories" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="entry" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entry" inverseName="food" inverseEntity="Entry"/>
+    </entity>
+    <elements>
+        <element name="Entry" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="Food" positionX="-54" positionY="-9" width="128" height="74"/>
+    </elements>
+</model>
