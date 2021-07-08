@@ -1,4 +1,4 @@
-# CalorieTracker
+# Calorie Tracker
 A simple calorie tracking app, that allows users to track their daily intake without the complicated options that modern apps provide.
 
 **NOTE:** After cloning repo, unzip the zipped file before opening the project
